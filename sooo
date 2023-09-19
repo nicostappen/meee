@@ -8,7 +8,6 @@ ventana.title("Hola mi amoooor")
 ventana.geometry("400x300")
 
 # Agregar un fondo de pantalla
-fondo = tk.PhotoImage(file="https://i.pinimg.com/564x/08/40/b7/0840b74d0da562db4ac05caf42d77437.jpg")
 fondo_label = tk.Label(ventana, image=fondo)
 fondo_label.place(relwidth=1, relheight=1)
 
