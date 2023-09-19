@@ -1,0 +1,28 @@
+import tkinter as tk
+
+# Crear una ventana
+ventana = tk.Tk()
+ventana.title("Hola mi amoooor")
+
+# Cambiar el tamaño de la ventana
+ventana.geometry("400x300")
+
+# Agregar un fondo de pantalla
+fondo = tk.PhotoImage(file="https://i.pinimg.com/564x/08/40/b7/0840b74d0da562db4ac05caf42d77437.jpg")
+fondo_label = tk.Label(ventana, image=fondo)
+fondo_label.place(relwidth=1, relheight=1)
+
+# Agregar un título
+titulo = tk.Label(ventana, text="Te amo mucho chofi", font=("Arial", 20))
+titulo.pack(pady=20)
+
+# Agregar un botón
+boton = tk.Button(ventana, text="Haz clic aquí", command=lambda: print("Hiciste clic en el botón"))
+boton.pack(pady=10)
+
+# Agregar una etiqueta
+etiqueta = tk.Label(ventana, text="¡MEEEEE!", font=("Helvetica", 14))
+etiqueta.pack()
+
+# Iniciar el bucle principal
+ventana.mainloop()
